@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanye west</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <button onclick="loadQuotes()">
-        Refresh
+    <nav class="text-center">
+            <a class="p-4 bg-green-200 hover:bg-orange-200 rounded" href="index.html">Home</a>
+            <a class="p-4 bg-green-200 hover:bg-orange-200 rounded" href="buddy.html">Buddy</a>
+            <a class="p-4 bg-green-200 hover:bg-orange-200 rounded" href="country.html">Country</a>
+            <a class="p-4 bg-green-200 hover:bg-orange-200 rounded" href="mealdb.html">Meal DB</a>
+    </nav>
+
+    <button class="p-4 bg-green-200 hover:bg-orange-200 rounded" onclick="loadQuotes()">
+        Refresh ID
     </button>
     <blockquote id="quote">
 
