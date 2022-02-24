@@ -22,7 +22,6 @@ const displayCountry = countries => {
         Name: ${country.name.common}<br>
         Area: ${country.area}<br>
         Capital: ${country.capital}<br>
-        Language: ${country.languages.eng}<br>
         Independent: ${country.independent}<br>
         Population: ${country.population}<br>
         Region: ${country.region}<br>
