@@ -17,7 +17,9 @@ const displayUser = users => {
         p.classList.add('rounded')
         p.classList.add('bg-orange-200')
         p.innerHTML = `
-        <img class="rounded-full" src="${buddy.picture.large}" style="width: 200px; height: 100px;">
+        <div class="flex justify-center">
+        <img class="rounded-full" src="${buddy.picture.large}" style="width: 150px; height: 150px;">
+        </div>
         Name: ${buddy.name.title} ${buddy.name.first} ${buddy.name.last}<br>
         Age: ${buddy.dob.age}<br>
         DOB: ${buddy.dob.date}<br>
