@@ -8,7 +8,9 @@ const loadCountries = () => {
 const displayCountry = countries => {
     const countryCon = document.querySelector('.countryName')
     countryCon.classList.add ('grid')
-    countryCon.classList.add ('grid-cols-4')
+    countryCon.classList.add ('sm:grid-cols-1')
+    countryCon.classList.add ('md:grid-cols-2')
+    countryCon.classList.add ('lg:grid-cols-3')
     
     for( const country of countries){
         const div = document.createElement('div');
@@ -18,11 +20,15 @@ const displayCountry = countries => {
         console.log(country);
         const p = document.createElement('p')
         p.innerHTML = `
-        <img src="${country.flags.png}" style="width: 200px; height: 100px;" >
+        <div class="flex">
+        <img class="w-2/3 px-2" src="${country.flags.png}">
+        <img class="w-1/3 px-2" src="${country.coatOfArms.png}">
+        </div>
         Name: ${country.name.common}<br>
         Area: ${country.area}<br>
         Capital: ${country.capital}<br>
         Independent: ${country.independent}<br>
+        Car Side: ${country.car.side}<br>
         Population: ${country.population}<br>
         Region: ${country.region}<br>
         Subregion: ${country.subregion}<br>
