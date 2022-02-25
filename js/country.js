@@ -17,7 +17,7 @@ const displayCountry = countries => {
         div.classList.add ('bg-orange-200')
         div.classList.add ('m-8')
         div.classList.add ('p-8')
-        console.log(country);
+        // console.log(country);
         const p = document.createElement('p')
         p.innerHTML = `
         <div class="flex">
